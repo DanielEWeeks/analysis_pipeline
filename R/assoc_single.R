@@ -119,7 +119,8 @@ assoc <- assocTestSingle(iterator, nullModel,
                          fast.score.SE=fast.score.SE,
                          genome.build=build,
                          BPPARAM=BPPARAM,
-                         geno.coding=geno.coding)
+                         geno.coding=geno.coding,
+                         imputed=TRUE)
 
 save(assoc, file=constructFilename(config["out_prefix"], chr, segment))
 
